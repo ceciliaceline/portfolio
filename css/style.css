@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+html{
+	width: 100%;
+}
+
+p,h1,h2,h3,h4,h4,h6,div,span {
+	font-family:Playfair Display,Dela Gothic One;	
+}
+
+a {
+	color: #e7c8d6;
+}
+
+@media (min-width: 768px) {  
+  p {
+  	font-size:6vw;
+  	line-height: 80%;
+  }
+}
+
+@media (max-width: 768px) {  
+  #wavy {
+  	width: 100px;
+  	margin-top: -10%;
+  }
+}
+
+@media (max-width: 768px) {  
+  #line, #lineb {
+  	display: none;
+  }
+}
+
+
+* {
+	box-sizing: border-box;
+}
+.body {
+	width: 100%;
+	background-color: #25356f;
+}
+
+
+#header {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+#header-title {
+	color: #e7c8d6;
+	font-family: "Playfair Display";
+	font-style: italic;
+	line-height: 80%;
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+  	transition: 1.0s;
+	margin-top: 12%;
+	margin-bottom: 20px;
+}
+
+#wavy {
+	max-width: 230px;
+	margin-top: 20px;
+	transition: 0.4s;
+	z-index: 99;
+}
+
+	@media (min-width: 768px) {
+/*nav選單*/
+	.navbar{
+	padding-left:50px!important;
+	padding-right:50px!important;
+	}
+}
+
+.navbar-brand img {
+	height: 50px;
+	z-index: 99;
+}
+
+.navbar {
+	font-family: "Dela Gothic One"
+	font-size: 15px;
+	color: #e7c8d6;
+	position: fixed;
+	
+}
+
+
+
+.nav-link:hover {
+  background-color: #e7c8d6;
+  color: #25356f;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+
+
+#line {
+	height: 300px;
+	width: 1px;
+	background-color: #e7c8d6;
+	position: absolute;
+	top: 300px;
+	left: 30px;
+}
+
+#lineb {
+	height: 300px;
+	width: 1px;
+	background-color: #e7c8d6;
+	position: absolute;
+	top: 150px;
+	right: 30px;
+}
+
+#works {
+	height: 100%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border: 1px solid #e7c8d6;
+	background-image: url('../img/grid1.jpg');
+	background-size: 50px;
+	background-color: #25356f;
+}
+
+	.works-title p{
+	font-family: Dela Gothic One;
+	font-size: 20px;
+	color: #25356f;
+	margin-top: ;
+	display: inline-block;
+	padding-bottom: 80px;
+	position: absolute;
+	transform: rotate(-90deg);
+}
+
+
+#posters {
+	margin: 30px 30px;
+	padding: 10px;
+}
+
+.poster-item {
+	height: 250px;
+	border: 1px solid #25356f;
+	box-shadow: 5px 5px #25356f;
+} 
+
+#posters:hover #info {
+    opacity: 0.9;
+}
+
+#info {
+    font: 11px "Dela Gothic One";
+    color: #25356f;
+    text-align: justify;
+    width: auto;
+    height: 250;
+    overflow: auto;
+    position: absolute;
+    padding: 5px;
+    line-height: 15px;
+    border: 1px solid #25356f;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+
+
+* {box-sizing: border-box}
+.mySlides {display: ;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+#imga{
+  max-width: 1000px;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  border: 1px solid #e7c8d6;
+}
+
+#prev, #next {
+  cursor: pointer;
+  width: auto;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.buttons{
+  top: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  color: #fff;
+
+}
+
+#next {
+  margin-right: -15%;
+}
+
+#prev {
+  margin-left: -15%;
+}
+
+
+.buttons:hover {
+  color: #e7c8d6;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin-top: -20px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #e7c8d6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+
+.active, .dot:hover {
+  background-color: #fff;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#services {
+	max-width: 1000px;
+	height: 100%;
+	background-image: url('../img/gridb.png');
+	background-size: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.services-title {
+		font-family: Dela Gothic One;
+		font-size: 20px;
+		color: #25356f;
+		margin-top: 30px;
+		display: inline-block;
+		padding-bottom: 100px;
+		position: absolute;
+		transform: rotate(-90deg);
+	}
+
+	.test {
+	font-family: Dela Gothic One;
+	font-size: 20px;
+	color: #000;
+	
+	-webkit-animation: example 10s infinite;
+	}
+
+		@-webkit-keyframes example {
+		  0%   {left:0px; top:0px;}
+		  
+		  50% {left:200px; top:0px;}
+		  
+		  100%   {left:0px; top:0px;}
+		}
+
+#service {
+	display: inline-flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+
+	.service-item {
+	height: 200px;
+	} 
+
+
+#about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1000px;
+	height: 100%;
+	background-color: #25356f;
+	border: 1px solid #e7c8d6;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 110px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	}
+
+	.about-title {
+		font-family: Dela Gothic One;
+		font-size: 20px;
+		color: #e7c8d6;
+		margin-top: 30px;
+		display: inline-block;
+		padding-bottom: 60px;
+		position: absolute;
+		transform: rotate(-90deg);
+	}
+
+
+#box {
+	width: 310px;
+	height: 400px;
+	background-image: url('../img/grid1.jpg');
+	background-size: 50px;
+	border: 5px solid #e7c8d6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 50px;
+
+}
+
+	#abt {
+		height: 300px;
+		border: 1px #e7c8d6 solid;
+		box-shadow: 5px 5px #e7c8d6;
+	}
+
+	#txt {
+		width: 400px;
+		height: 100%;
+		border: 1px #e7c8d6 solid;
+		background-color: #e7c8d6;
+		color: #25356f;
+		padding: 20px;
+		background-image: url('../img/gridb.png');
+		background-size: 50px;
+		font-size: 17px;
+	}
+
+#contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1000px;
+	height: 100%;
+	background-color: #e7c8d6;
+	border: 1px solid #e7c8d6;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px;
+}
+	
+	.contact-title {
+		font-family: Dela Gothic One;
+		font-size: 20px;
+		color: #25356f;
+		margin-top: 40px;
+		display: inline-block;
+		padding-bottom: 90px;
+		position: absolute;
+		transform: rotate(-90deg);
+	}
+
+.contact .form {
+	max-width: 600px;
+	margin:0 auto;
+	padding: 0 30px;
+	color:#ffffff;
+}
+
+.form input {
+	height: 40px;
+	max-width: 800px;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border:0px;
+	padding: 12px;
+	resize: vertical;
+	color: #000000;
+	margin:7.5px 0;
+}
+
+.form textarea {
+	max-width: 800px;
+	height: 200px;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border:0px;
+	padding: 12px;
+	resize: vertical;
+	color: #000000;
+	margin:7.5px 0;
+}
+
+input[type=submit] {
+  background-color: #25356f;
+  color: #e7c8d6;
+  cursor: pointer;
+  width: 100px!important;
+  height: 48px;
+}
+
+#row {
+	max-width: 1000px;
+	height: 100%;
+	padding: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #e7c8d6;
+	background-image: url('../img/gridd.png');
+	background-size: 50px;
+	color: #e7c8d6;
+	font-size: 15px;
+	margin-bottom: 40px;
+}
